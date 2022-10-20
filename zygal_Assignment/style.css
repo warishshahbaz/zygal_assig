@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 40vw;
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 90px;
+}
+.form select{
+    padding: 7px 16px;
+    font-size: 17px;
+    margin: 5px;
+}
+.card-header{
+    width: 50vw;
+    padding: 12px;
+    font-size: 20px;
+    color: gray;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+.table{
+    width: 40vw;
+    padding: 12px;
+}
+.user_input{
+    width: 40vw;
+ 
+}
+.user_input input{
+    width: 70%;
+    padding: 12px;
+}
+.user_input button{
+    width: 20%;
+    padding: 12px 18px;
+}
+
+.cell_color{
+    background-color: green;
+}
