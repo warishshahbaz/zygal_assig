@@ -22,6 +22,8 @@ function jump() {
 jump();
 
 function userDate(){
+     mydate =  document.getElementById('users');
+     day = parseInt(mydate.value);
     showCalendar(currentYear,currentMonth, day);
     
 }
@@ -30,10 +32,12 @@ function userDate(){
   function showCalendar( year,month,day) {
 
     let firstDay = (new Date(year, month,day))
-    console.log(firstDay);
-    // firstDay =await firstDay.setDate(firstDay.getDate() + mydate);
+    console.log(year);
+    console.log(month);
+    console.log(day);
+  
     let daysInMonth = 32 - new Date(year, month, 32).getDate();
-    // let daysInMonth = 32 -  day;
+    
     let tbl = document.getElementById("calendar-body"); // body of the calendar
 
     // clearing all previous cells
@@ -65,7 +69,7 @@ function userDate(){
             else {
                 let cell = document.createElement("td");
                 let cellText = document.createTextNode(date);
-                if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
+                if (date === day && year === year && month === month) {
                     cell.classList.add("cell_color");
                 } // color today's date
                 cell.appendChild(cellText);
